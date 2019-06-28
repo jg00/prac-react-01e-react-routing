@@ -1,0 +1,13 @@
+.Nav ul {
+  padding: 0;
+}
+
+.Nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.Nav a {
+  text-decoration: none;
+}

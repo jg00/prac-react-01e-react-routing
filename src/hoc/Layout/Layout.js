@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Aux from "../Aux/Aux";
+import Navigation from "../../components/Navigation/Navigation";
 
 class Layout extends Component {
   render() {
     return (
       <Aux>
-        <header>Header</header>
+        <Navigation />
         <main>{this.props.children}</main>
       </Aux>
     );
