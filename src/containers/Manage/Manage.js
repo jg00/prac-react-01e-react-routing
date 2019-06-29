@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+// import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Aux from "../../hoc/Aux/Aux";
 
 import Courses from "../Courses/Courses";
@@ -18,7 +19,7 @@ class Manage extends Component {
           {/* <Route path="/courses/:courseId" component={Course} /> */}
           <Route path="/courses" component={Courses} />
           <Route path="/users" component={Users} />
-          <Redirect from="/all-courses" to="courses" />
+          {/* <Redirect from="/all-courses" to="courses" /> */}
           <Route component={NoMatch} />
         </Switch>
       </Aux>
