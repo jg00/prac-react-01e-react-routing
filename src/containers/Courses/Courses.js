@@ -15,7 +15,7 @@ class Courses extends Component {
   render() {
     return (
       <div>
-        <h1>Amazing Udemy Courses</h1>
+        <h1>Routing Courses</h1>
         <section className="Courses">
           {this.state.courses.map(course => {
             return (

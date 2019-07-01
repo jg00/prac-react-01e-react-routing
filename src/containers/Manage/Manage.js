@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-// import { Route, Switch, Redirect } from "react-router-dom";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+// import { Route, Switch } from "react-router-dom";
 import Aux from "../../hoc/Aux/Aux";
 
 import Courses from "../Courses/Courses";
 // import Course from "../Course/Course";
 import Users from "../Users/Users";
-import NoMatch from "../../components/NoMatch/NoMatch";
+// import NoMatch from "../../components/NoMatch/NoMatch";
 
 class Manage extends Component {
   render() {
@@ -19,8 +19,9 @@ class Manage extends Component {
           {/* <Route path="/courses/:courseId" component={Course} /> */}
           <Route path="/courses" component={Courses} />
           <Route path="/users" component={Users} />
-          {/* <Redirect from="/all-courses" to="courses" /> */}
-          <Route component={NoMatch} />
+          <Redirect from="/all-courses" to="courses" />
+          <Redirect from="/" to="courses" />
+          {/* <Route component={NoMatch} /> */}
         </Switch>
       </Aux>
     );
